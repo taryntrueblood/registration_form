@@ -146,6 +146,9 @@ button{
 }
 
 @media screen and (min-width:760px) {
+  .wrapper{
+    padding-left: 14%;
+  }
   hr{
     width: 70%;
   }
