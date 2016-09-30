@@ -152,14 +152,14 @@ button{
 
   form{
     max-width: 768px;
-    margin-left: 14%;
+    margin: auto;
   }
 
   .contact_info label{
     display: inline-block;
     padding-bottom: 10px;
     font-weight: 100;
-    width: 172px;
+    width: 219px;
   }
 
   input[id="fullName"],
