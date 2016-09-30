@@ -146,15 +146,13 @@ button{
 }
 
 @media screen and (min-width:760px) {
-  .wrapper{
-    padding-left: 14%;
-  }
+
   hr{
-    width: 70%;
+    width: 95%;
   }
 
   form{
-    max-width: 768px;
+    max-width: 600px;
     margin: auto;
   }
 
@@ -170,10 +168,9 @@ button{
   input[id="phoneNumber"]
   input[id="address"],
   input[id="city"],
-  input[id="state"],
-  input[id="zip_code"]{
+  input[id="state"]{
       display: inline-block;
-      width: 450px;
+      width: 410px;
     }
 
 
