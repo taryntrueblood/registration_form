@@ -1,0 +1,179 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: "Lato", sans-serif;
+}
+
+h1{
+  background-color:#353d48;
+  color: #fff;
+  padding: 20px;
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+h3{
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+hr{
+  border:0;
+  border-top: 8px double #353d48;
+  width: 92%;
+}
+
+header {
+  text-align: center;
+}
+header p{
+  margin: 0 10px 25px 10px;
+  font-weight: 100;
+  color: rgb(158, 158, 158);
+}
+
+
+
+.contact_info legend, .newsletter legend{
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+fieldset{
+  border: none;
+}
+
+.newsletter{
+  margin-left: 5px;
+}
+
+.newsletter p,
+.newsletter label,
+.contact_info label{
+  font-weight: 100;
+  color: rgb(158, 158, 158);
+}
+
+
+.newsletter p{
+  margin-top: 5px;
+}
+
+.news, .format {
+  padding-bottom: 10px;
+}
+
+.contact_info label{
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 100;
+  width: 150px;
+}
+
+
+#fullName,
+#email,
+#phoneNumber,
+#address,
+#city,
+#state{
+  display: inline-block;
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #e8eeef;
+  border-radius: 5px;
+}
+
+#zip_code{
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #e8eeef;
+  width: 120px;
+  border-radius: 5px;
+}
+
+input::-webkit-input-placeholder{
+  text-align: right;
+}
+input::-moz-placeholder{
+  text-align: right;
+}
+input::-ms-input-placeholder{
+  text-align: right;
+}
+input:focus,
+select:focus{
+  border: 2px solid #2d3945;
+}
+
+
+textarea{
+  background-color: #e8eeef;
+  width: 288px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+.newsletter{
+  padding: 20px 0;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-weight: 100;
+  color: rgba(158, 158, 158, 0.7);
+}
+
+button{
+  background-color: rgb(82, 185, 176);
+  color: #fff;
+  width: 90%;
+  padding: 19px 39px 18px 39px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 19px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width:760px) {
+  hr{
+    width: 70%;
+  }
+
+  form{
+    max-width: 768px;
+    margin-left: 14%;
+  }
+
+  .contact_info label{
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: 100;
+    width: 172px;
+  }
+
+  input[id="fullName"],
+  input[id="email"],
+  input[id="phoneNumber"]
+  input[id="address"],
+  input[id="city"],
+  input[id="state"],
+  input[id="zip_code"]{
+      display: inline-block;
+      width: 450px;
+    }
+
+
+
+
+}
