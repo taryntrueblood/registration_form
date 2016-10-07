@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
       <h3>Signup for our newsletter</h3>
       <p>Get the latest news on how your code is doing right in your inbox</p>
     </header>
-    <hr>
+
 <div class="wrapper">
     <form action="index.html" method="post">
       <div class="contact_info">
@@ -94,7 +94,7 @@
             <input type="text" name="zip_code" id="zip_code">
      </fieldset>
    </div>
-  
+
      <div class="newsletter">
         <fieldset>
         <legend>Newsletter</legend>
@@ -123,8 +123,8 @@
               <input type="radio" id="plain_format" value="plain_format" name="format">
               <label for="plain_format">Plain text</label>
           </div>
-                <p>Other topics you'd like to hear about</p>
-                <textarea cols="20" rows="6"></textarea>
+                <label for="topics">Other topics you'd like to hear about</label>
+                <textarea id="topics" name="user_topics"></textarea>
           </fieldset>
         </div>
           <button type="submit">Sign Up</button>
