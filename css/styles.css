@@ -10,6 +10,7 @@
 
 body{
   font-family: "Lato", sans-serif;
+  background-color: #fbeff1;
 }
 
 /*************************
@@ -17,7 +18,7 @@ body{
 *************************/
 
 h1{
-  background-color:#353d48;
+  background-color:#9b2335;
   color: #fff;
   padding: 20px;
   margin-top: 0;
@@ -28,6 +29,7 @@ h1{
 h3{
   padding-top: 5px;
   margin-bottom: 10px;
+  color: #9b2335;
 }
 
 header {
@@ -36,7 +38,7 @@ header {
 header p{
   margin: 0 10px 25px 10px;
   font-weight: 100;
-  color: rgb(158, 158, 158);
+  color: #000;
 }
 
 
@@ -46,7 +48,7 @@ header p{
 
 form{
   border: 0;
-  border-top: 8px double #353d48;
+  border-top: 8px double #9b2335;
   margin: 0 10px;
 }
 
@@ -54,6 +56,7 @@ form{
   padding-bottom: 25px;
   font-weight: 700;
   font-size: 20px;
+  color:#9b2335;
 }
 
 fieldset{
@@ -61,7 +64,7 @@ fieldset{
 }
 
 .newsletter{
-  border-top: 1px solid;
+  border-top: 1px solid #9b2335;
   margin-left: 5px;
 }
 
@@ -69,7 +72,7 @@ fieldset{
 .newsletter label,
 .contact_info label{
   font-weight: 100;
-  color: rgb(71, 104, 140);
+  color: #000;
 }
 
 
@@ -79,6 +82,7 @@ fieldset{
 
 .news, .format {
   padding-bottom: 10px;
+  height: 50px;
 }
 
 .contact_info{
@@ -91,6 +95,21 @@ fieldset{
   width: 150px;
 }
 
+input,
+select,
+#zip_code,
+#topics{
+  transition: opacity .5s linear;
+  opacity: 0.4;
+}
+
+input:hover, select:hover, #zip_code:hover, #topics:hover,
+input:focus, select:focus, #zip_code:focus, #topics:focus{
+  opacity: 1;
+  border: 2px solid #9b2335;
+
+}
+
 #fullName,
 #email,
 #phoneNumber,
@@ -101,7 +120,7 @@ fieldset{
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
-  background-color: #e8eeef;
+  background-color: #fff;
   border-radius: 5px;
 }
 
@@ -109,13 +128,13 @@ fieldset{
   display: inline-block;
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #e8eeef;
+  background-color: #fff;
   width: 120px;
   border-radius: 5px;
 }
 
 #topics{
-  background-color: #e8eeef;
+  background-color: #fff;
   width: calc(100% - 4px);
   border-radius: 5px;
   padding: 38px;
@@ -143,10 +162,7 @@ input::-moz-placeholder{
 input::-ms-input-placeholder{
   text-align: right;
 }
-input:focus,
-select:focus{
-  border: 2px solid #2d3945;
-}
+
 
 
 
@@ -173,7 +189,7 @@ input[type="radio"] + label:before{
   left: 0;
   width: 20px;
   height: 20px;
-  border:2px solid #353D5D;
+  border:2px solid #9b2335;
   border-radius: 50%;
 }
 
@@ -181,7 +197,7 @@ input[type="radio"]:checked + label:after{
   content: "";
   width: 10px;
   height: 10px;
-  background-color: #353D5D;
+  background-color: #9b2335;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -213,12 +229,12 @@ input[type="checkbox"] + label:before{
   width: 20px;
   height: 20px;
   border-radius: 3px;
-  border: 2px solid #353D5D;
+  border: 2px solid #9b2335;
 }
 
 input[type="checkbox"]:checked + label:before{
   content: '\2713';
-  color: #353D5D;
+  color: #9b2335;
   text-align: center;
 }
 
@@ -230,8 +246,14 @@ footer{
   color: rgba(158, 158, 158, 0.7);
 }
 
+
+
+/**************************
+  Button
+***************************/
+
 button{
-  background-color: rgb(82, 185, 176);
+  background-color: #9b2335;
   color: #fff;
   width: calc(100% - 29px);
   padding: 19px 39px 18px 39px;
@@ -240,6 +262,26 @@ button{
   margin: 0 15px;
   border-radius: 5px;
   border-width: 1px 1px 3px;
+}
+
+button:hover{
+  background-color: #4d111a;
+  color: white;
+}
+
+@media (min-width:500px) {
+  .contact_info label{
+    display: inline-block;
+  }
+  #fullName,
+  #email,
+  #phoneNumber,
+  #address,
+  #city,
+  #state{
+    display: inline-block;
+    width: calc(100% - 154px)
+  }
 }
 
 @media screen and (min-width:760px) {
@@ -274,12 +316,10 @@ button{
   input[id="city"],
   input[id="state"],
   #topics{
-      /*display: inline-block; */
       width: 100%
     }
 
     button{
       width: calc(100% - 27px );
     }
-
 }
