@@ -21,10 +21,10 @@
       <fieldset>
         <legend>Contact Information</legend>
             <label for="fullName">Full Name</label>
-            <input type="text" name="fullName" id="fullName"  placeholder="Required" required>
+            <input type="text" name="fullName" id="fullName"  placeholder="Required" required aria-required="true">
 
               <label for="email">Email Address</label>
-              <input type="email" name="email" id="email" placeholder="Required" required>
+              <input type="email" name="email" id="email" placeholder="Required" required aria-required="true">
 
               <label for="phoneNumber">Phone Number</label>
               <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="e.g. (111)222 - 3344">
@@ -144,7 +144,7 @@
              <label for="pdf_format">PDF</label>
          </div>
                 <label for="topics">Other topics you'd like to hear about</label>
-                <textarea id="topics" name="user_topics"></textarea>
+                <textarea id="topics" name="user_topics" rows="3"></textarea>
           </fieldset>
         </div>
           <button type="submit">Sign Up</button>

@@ -107,8 +107,9 @@ input:hover, select:hover, #zip_code:hover, #topics:hover,
 input:focus, select:focus, #zip_code:focus, #topics:focus{
   opacity: 1;
   border: 2px solid #9b2335;
-
 }
+
+
 
 #fullName,
 #email,
@@ -140,6 +141,7 @@ input:focus, select:focus, #zip_code:focus, #topics:focus{
   padding: 38px;
   margin-top: 23px;
   border: none;
+  text-align: left;
 }
 
 .newsletter{
