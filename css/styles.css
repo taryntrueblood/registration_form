@@ -109,6 +109,10 @@ input:focus, select:focus, #zip_code:focus, #topics:focus{
   border: 2px solid #9b2335;
 }
 
+input:focus, select:focus, #zip_code:focus, #topics:focus{
+  outline: none;
+}
+
 
 
 #fullName,
@@ -138,7 +142,7 @@ input:focus, select:focus, #zip_code:focus, #topics:focus{
   background-color: #fff;
   width: calc(100% - 4px);
   border-radius: 5px;
-  padding: 38px;
+  height: 120px;
   margin-top: 23px;
   border: none;
   text-align: left;
