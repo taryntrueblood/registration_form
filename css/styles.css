@@ -32,10 +32,10 @@ h3{
   color: #9b2335;
 }
 
-header {
+section {
   text-align: center;
 }
-header p{
+section p{
   margin: 0 10px 25px 10px;
   font-weight: 100;
   color: #000;
